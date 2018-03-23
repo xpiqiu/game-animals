@@ -10,7 +10,7 @@ import android.widget.Button;
  * Created by echo on 2018/3/22.
  */
 
-public class win extends AppCompatActivity {
+public class Win extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,14 +18,14 @@ public class win extends AppCompatActivity {
 
         Button bt_tryagin,bt_exit;
 
-        bt_tryagin = (Button)win.this.findViewById(R.id.bt_win_tryagain);
-        bt_exit = (Button)win.this.findViewById(R.id.bt_win_exit);
+        bt_tryagin = (Button)Win.this.findViewById(R.id.bt_win_tryagain);
+        bt_exit = (Button)Win.this.findViewById(R.id.bt_win_exit);
 
         bt_tryagin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
-                intent.setClass(win.this,game.class);
+                intent.setClass(Win.this,Game.class);
                 startActivity(intent);
                 //finish();
                 //System.exit(0);
@@ -35,7 +35,7 @@ public class win extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
-                intent.setClass(win.this,MainActivity.class);
+                intent.setClass(Win.this,MainActivity.class);
                 startActivity(intent);
                 //finish();
                 //System.exit(0);

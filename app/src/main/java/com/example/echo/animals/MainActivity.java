@@ -4,12 +4,8 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this,game.class);
+                intent.setClass(MainActivity.this,Game.class);
                 startActivity(intent);
             }
         });
@@ -44,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
     }
     private void init(){
         //引导页
-        bt_play = (Button) findViewById(R.id.bt_play);
-        bt_exit = (Button) findViewById(R.id.bt_exit);
+        bt_play =findViewById(R.id.bt_play);
+        bt_exit =findViewById(R.id.bt_exit);
         Typeface typeface = Typeface.createFromAsset(getAssets(),"fonts/04B_03.TTF");
         bt_play.setTypeface(typeface);
         bt_exit.setTypeface(typeface);

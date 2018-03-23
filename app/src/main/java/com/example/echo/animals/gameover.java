@@ -10,36 +10,35 @@ import android.widget.Button;
  * Created by echo on 2018/3/22.
  */
 
-public class gameover extends AppCompatActivity {
+public class GameOver extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gameover);
-        Button bt_tryagin,bt_exit;
+        Button btn_try_again, bt_exit;
 
-        bt_tryagin = (Button)gameover.this.findViewById(R.id.bt_gameover_tryagain);
-        bt_exit = (Button)gameover.this.findViewById(R.id.bt_gameover_exit);
+        btn_try_again = findViewById(R.id.bt_gameover_tryagain);
 
-        bt_tryagin.setOnClickListener(new View.OnClickListener() {
+
+        btn_try_again.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent();
-                intent.setClass(gameover.this,game.class);
-                startActivity(intent);
-               // finish();
-                //System.exit(0);
+
+                startActivity(new Intent(GameOver.this, Game.class));
             }
         });
-        bt_exit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent();
-                intent.setClass(gameover.this,MainActivity.class);
-                startActivity(intent);
-                //finish();
-                //System.exit(0);
-            }
-        });
+
+
+    }
+
+    public void btnExit(View view) {
+          /*
+                    Intent intent = new Intent();
+                    intent.setClass(GameOver.this,MainActivity.class);
+                    startActivity(intent);
+          */
+        //Should exit the application
+        finishAffinity();
 
     }
 }

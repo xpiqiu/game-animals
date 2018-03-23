@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,37 +7,22 @@
     android:background="@drawable/bg_blue_game"
     tools:context="com.example.administrator.animals.MainActivity">
 
-
-    <LinearLayout
+    <Button
+        android:id="@+id/btn_play"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/selector"
+        android:fontFamily="@font/font_one"
+        android:text="Play"
+        android:textColor="@drawable/text_selector"
+        android:textSize="30sp"
+        android:onClick="play_button_click"
+        android:textStyle="bold"
+        android:visibility="visible"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="278dp"
-            android:orientation="vertical">
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/play_button"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/font_one"
-                android:onClick="play_button_click"
-                android:text="PLAY"
-                android:textSize="36sp"
-                android:visibility="visible" />
-        </LinearLayout>
-    </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

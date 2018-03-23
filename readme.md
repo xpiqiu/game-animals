@@ -1,5 +1,12 @@
 # Find it if you can
-> ![image](https://github.com/OLDdriver2/game-animals/blob/master/display/2.PNG?raw=true)
-> 
-> Each level, you will be given 9 pictures.One of them is different,such as the pig in the center.You have 15 seconds to find the different one,or you will lose.And if you choose the wrong one,you also will be lose.
-> The game now have 7 levels.
+
+![image](display/Game.gif)
+
+The goal of this game is for you to find the picture the differs from the other 8.
+
+How to play the game:
+When you start the game, you will be shown nine pictures. They all seem to be similar, but there is one that has a slight difference. As shown in the above snapshot.
+
+You have 15 seconds to find the picture that does not belong to the group. If you fail, you will lose.
+
+Currently, the game has seven levels.

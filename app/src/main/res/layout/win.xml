@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_green">
+
+    <ImageView
+        android:id="@+id/imgv_great"
+        android:layout_width="256dp"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        app:srcCompat="@drawable/great" />
+
+    <Button
+        android:id="@+id/bt_win_tryagain"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgv_great"
+        android:layout_centerHorizontal="true"
+        android:text="Try agian"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bt_win_exit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bt_win_tryagain"
+        android:layout_below="@+id/bt_win_tryagain"
+        android:text="exit"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp" />
+</RelativeLayout>
